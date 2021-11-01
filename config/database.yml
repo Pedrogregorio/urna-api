@@ -1,0 +1,14 @@
+default: &default
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: gregorio
+  password: <%= ENV.fetch("DB_PASSWORD") { 'secret123' } %>
+  host: <%= ENV.fetch("DB_HOST") { '127.0.0.1' } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: urna_eletronica
+
+test:
+  <<: *default
+  database: urna_eletronica_test
