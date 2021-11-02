@@ -1,0 +1,36 @@
+pt-BR:
+  activerecord:
+    models:
+      user:
+        one: Usuário
+        other: Usuários
+    attributes:
+      default_attributes: &default_attributes
+        id: '#'
+        name: Nome
+        created_at: Data de criação
+        updated_at: Data de atualização
+      user:
+        <<: *default_attributes
+        age: Idade
+        cpf: CPF
+        voter_registration: Titulo Eleitoral
+        voted: Votado
+    errors:
+      models:
+        user:
+          attributes:
+            cpf:
+              invalid: Invalido
+              blank: não pode ficar em branco
+              already_registered: já cadastrado
+            age:
+              blank: não pode ficar em branco
+            name:
+              blank: não pode ficar em branco
+              not_full: tem que ser completo
+  services:
+    session_service:
+      errors:
+        invalid_params: Email ou senha invalidos
+        user_not_found: Usuário não encontrado
