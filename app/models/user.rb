@@ -4,6 +4,8 @@ class User < ApplicationRecord
   validates_presence_of :name
   validates_presence_of :age
   validates_presence_of :cpf
+  validates_presence_of :city
+  validates_presence_of :state
   
   validate :document_validation
   validate :full_name

@@ -6,6 +6,6 @@ class Api::V1::Users::UsersController < Api::ApiController
   end
 
   def user_params
-    params.permit(:name, :age, :cpf)
+    params.permit(:name, :age, :cpf, :city, :state)
   end
 end
