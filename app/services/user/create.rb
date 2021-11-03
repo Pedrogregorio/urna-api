@@ -20,6 +20,8 @@ class User::Create < BusinessProcess::Base
       age: user_params[:age],
       voter_registration: user_params[:voter_registration],
       cpf: user_params[:cpf],
+      city: user_params[:city],
+      state: user_params[:state],
       voted: false
     }
   end

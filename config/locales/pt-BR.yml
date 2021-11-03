@@ -16,6 +16,13 @@ pt-BR:
         cpf: CPF
         voter_registration: Titulo Eleitoral
         voted: Votado
+        city: Cidade
+        state: Estado
+      candidate:
+        caregory: Categoria
+        code: Codigo
+        city: Cidade
+        state: Estado
     errors:
       models:
         user:
@@ -29,6 +36,26 @@ pt-BR:
             name:
               blank: não pode ficar em branco
               not_full: tem que ser completo
+            city:
+              blank: não pode ficar em branco
+            state:
+              blank: não pode ficar em branco
+        candidate:
+          attributes:
+            caregory:
+              blank: não pode ficar em branco
+              invalid: invalida
+            code:
+              blank: não pode ficar em branco
+              already_registered: já cadastrado
+              invalid: invalido para esse tipo de categoria
+            name:
+              blank: não pode ficar em branco
+              not_full: tem que ser completo
+            city:
+              blank: não pode ficar em branco
+            state:
+              blank: não pode ficar em branco
   services:
     session_service:
       errors:
