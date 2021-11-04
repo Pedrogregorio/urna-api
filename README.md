@@ -1,4 +1,4 @@
-# Electronic voting machine
+# Electronic voting machine <img align='right' src='https://media.giphy.com/media/S65c4nS0vqflK1g7oK/giphy.gif' width='400'>
 
 this is a project to try to reproduce brazil's electoral system. in it we have a register of users and candidates, where with a user it will be possible to vote for a registered candidate, through their code
 
