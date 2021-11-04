@@ -14,14 +14,16 @@ Things you may want to cover:
    - MySQL v8.0.25-0
 
 ### Setup
-   - in the file ``config/database.yml`` put your user's settings for mysql
+in the file ``config/database.yml`` put your user's settings for mysql
 ```bash
 $ gem install bundle
 $ bundle install
 ```
 
 ### Database create
-   - `$ rails db:create db:migrate`
+```
+$ rails db:create db:migrate
+```
 
 ### Run
 ```
