@@ -6,10 +6,12 @@ class User < ApplicationRecord
   validates_presence_of :cpf
   validates_presence_of :city
   validates_presence_of :state
-  
+
   validate :document_validation
   validate :full_name
   validate :unique_cpf
+
+  has_many :votes
 
   def cerate_voter_registration
     self.voter_registration = rand(10000...99999)

@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       namespace :candidates do
         resources :candidates, only: [:create, :index]
       end
+      namespace :votes do
+        resources :votes, only: [:create]
+      end
     end
   end
 end
