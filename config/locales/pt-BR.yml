@@ -4,6 +4,9 @@ pt-BR:
       user:
         one: Usuário
         other: Usuários
+      candidate:
+        one: Candidato
+        other: Candidatos
     attributes:
       default_attributes: &default_attributes
         id: '#'
