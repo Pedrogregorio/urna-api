@@ -7,6 +7,8 @@ class Api::V1::Candidates::CandidatesController < ApplicationController
   end
 
   def show
+    @candidates = Candidate.find_by(code: params[:id])
+    render json: { candidates: @candidates }
   end
 
   def create

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         resource :user, only: [:create]
       end
       namespace :candidates do
-        resources :candidates, only: [:create, :index]
+        resources :candidates, only: [:create, :index, :show]
       end
       namespace :votes do
         resources :votes, only: [:create]
